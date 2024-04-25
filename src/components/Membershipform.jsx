@@ -1,11 +1,16 @@
 import { useState } from "react"
 import * as yup from "yup"
+import {app,auth} from "/src/firebase.jsx"
+import { sendEmailVerification } from 'firebase/auth'
+import {createUserWithEmailAndPassword} from "firebase/auth"
+
 let email="/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/"
 const Membershipform = ({Addmember,Member}) => {
   const [Formdata,setFormdata]=useState({
     username:"",
     userphone:0,
     useremail:"",
+    userpassword:"",
     userrole:"",
     userbranch:""
 })
@@ -28,6 +33,28 @@ const Membershipform = ({Addmember,Member}) => {
               return
             }
            }
+           try {
+          await  formschema.validate(Formdata,{
+              abortEarly: false,})
+             
+             createUserWithEmailAndPassword(auth,Formdata.useremail,Formdata.userpassword).then(
+              (data)=>{
+                  const user=data.user
+                  console.log(user)
+                  console.log(data)
+                  sendEmailVerification(user).then(alert("please verify your email by link send on your mail!"))
+                  if(user.emailVerified==false){console.log("waiting for  email verification!")
+                return}
+              else{console.log("submited sucsessfully!"),setFormdata(Formdata)}
+              }
+          ).catch((err)=>{alert(err.message)
+          return})
+              
+             Addmember(Formdata.username,Formdata.userphone,Formdata.useremail,Formdata.userrole,Formdata.userbranch)
+          
+          }catch (error) {alert(error.message,"All Fields are required!")
+          return}
+          
         const options={
           method:"POST",
           headers:{
@@ -37,17 +64,12 @@ const Membershipform = ({Addmember,Member}) => {
             Formdata
           })
         }
+        console.log(Formdata)
         const res= await fetch('https://cultral-group-default-rtdb.firebaseio.com/Users.json',options)
         if (res){console.log(res)}
         else{console.log(error)}
-        try {
-          
-          await formschema.validate(Formdata,{
-            abortEarly: false,})
-            alert("submited sucsessfully!")
-            setFormdata(Formdata)
-          Addmember(Formdata.username,Formdata.userphone,Formdata.useremail,Formdata.userrole,Formdata.userbranch)
-        }catch (error) {alert(error.message)} }}
+       
+     }}
       className='flex flex-col gap-7 border border-black rounded-lg p-12 bg-gray-500'>
       <h1 className='ml-[1vw] text-lg font-bold'>MEMBERSHIP FORM</h1>
       <input 
@@ -68,6 +90,11 @@ const Membershipform = ({Addmember,Member}) => {
       value={Formdata.useremail}
       onChange={(e)=>{setFormdata({...Formdata,[e.target.name]:e.target.value})}}
       type="email"  placeholder='E-mail' className='border px-4 py-2 border-black rounded-md'/>
+      <input 
+      name="userpassword"
+      value={Formdata.userpassword}
+      onChange={(e)=>{setFormdata({...Formdata,[e.target.name]:e.target.value})}}
+      type="text" placeholder="password"  className='border px-4 py-2 border-black rounded-md'/>
       <input
       id="userrole"
       name="userrole"
