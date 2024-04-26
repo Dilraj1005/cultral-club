@@ -111,7 +111,7 @@ const Membershipform = ({Addmember,Member}) => {
         <option value="Ece">ECE</option>
         <option value="Ecm">ECM</option>
       </select>
-      <input type="submit" className='border border-black rounded-md cursor-pointer bg-blue-500 hover:scale-90'/>
+      <button type="submit"  className='border border-black rounded-md cursor-pointer bg-blue-500 hover:scale-90'>SUBMIT</button>
       </form>
     </div>  )
 }
