@@ -70,7 +70,7 @@ const Membershipform = ({Addmember,Member}) => {
         else{console.log(error)}
        
      }}
-      className='flex flex-col gap-7 border border-black rounded-lg p-12 bg-gray-500'>
+      className='flex flex-col gap-7 border border-black rounded-lg p-12 bg-slate-400'>
       <h1 className='ml-[1vw] text-lg font-bold'>MEMBERSHIP FORM</h1>
       <input 
       id="username"
