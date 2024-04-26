@@ -2,11 +2,15 @@ import Membershipform from "./Components/Membershipform";
 import "./App.css"
 import { useEffect, useState } from "react";
 import {Routes,Route} from "react-router-dom"
-import Membercard from "./Components/Membercard";
+import Navbar from './Components/Navbar'
 import Members from "./Components/Members";
-import Events from "./Components/Events";
-
+import Homepage from './pages/Homepage'
+import Contactpage from './pages/Contactpage'
+import Events from './pages/Events'
+import About from './pages/About'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 
 function App(){
@@ -39,17 +43,25 @@ useEffect(()=>{
      setMember([...Member,newMember])
       ;}
       return(
-  <>
-  <div className="flex flex-row items-center gap-6 ml-6  justify-center mt-11">
+  < div className="overflow-hidden  ">
+  <Navbar/>
+  <div className="flex flex-row items-center gap-6 mt-6  justify-center">
   <Routes>
-    <Route path="/Membershipform" element={<Membershipform Addmember={Addmember} Member={Member} />} />
-  </Routes>
-   <div className=" bg-gray-700 flex justify-center items-center w-[50vw] gap-3 rounded-xl" >
+    <Route path='/' element={<Homepage />} />
+    <Route path="/members" element={<div className=" bg-gray-700 flex justify-center items-center w-[50vw] gap-3 rounded-xl" >
    <Members Member={Member} />
+   </div>} />
+   <Route path="/Membershipform" element={<><Membershipform />,<div className=" bg-gray-700 flex justify-center items-center w-[50vw] gap-3 rounded-xl" >
+   <Members Member={Member} />
+   </div></>}/>
+          <Route path='/contact' element={<Contactpage />} />
+          <Route path='/events' element={<Events />} />
+         <Route path='/about' element={<About />} />
+  </Routes>
+   
    </div>
-   </div>
-   {/* <Events /> */}
-  </>
+  </div>
+  
 )
 }
 export default App;
