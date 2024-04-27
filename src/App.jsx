@@ -3,16 +3,13 @@ import "./App.css"
 import { useEffect, useState } from "react";
 import {Routes,Route} from "react-router-dom"
 
+import university_logo from "./images/university_logo.jpg"
 import Navbar from './Components/Navbar'
 import Members from "./Components/Members";
 import Homepage from './pages/Homepage'
-import Contactpage from './pages/Contactpage'
+
 import Events from './pages/Events'
 import About from './pages/About'
-
-
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Typewriter = ({ sentence, onComplete }) => {
@@ -27,18 +24,19 @@ const Typewriter = ({ sentence, onComplete }) => {
       } else {
         if (onComplete) onComplete();
       }
-    }, 100); 
+    }, 50); 
 
     return () => clearTimeout(timer);
   }, [currentIndex, sentence, onComplete]);
 
-  return <h1 className=" font-bold text-[10vh] text-blue-500">{currentText}</h1>;
+  return <div id="first"  className="flex justify-center mt-[20vh]  w-[50vw] h-[80vh] ">
+   <h1 className=" font-bold text-[10vh] text-blue-500">{currentText}</h1></div> ;
 };
 
 
 
 function App(){
-  const initialSentence = "Welcome to the Members page!";
+  const initialSentence = "WELCOME TO THE CULTURAL CLUB!";
   const [showPage, setShowPage] = useState(false);
 
   useEffect(() => {
@@ -52,7 +50,7 @@ function App(){
   const handleTypewriterComplete = () => {
     setTimeout(() => {
       setShowPage(true);
-    }, 500); 
+    }, 300); 
   };
 
   //add2
@@ -87,45 +85,28 @@ useEffect(()=>{
      setMember([...Member,newMember])
       ;}
       return(
-
-
-  
-    
-
-  {!showPage && <Typewriter sentence={initialSentence} onComplete={handleTypewriterComplete} />}
-      {showPage && (
-        <>
-          {/* Render the rest of your components here */}
-          <div>
-        
-          
-  < div className="overflow-hidden  ">
-  <Navbar/>
+        <div>
+        {!showPage && <Typewriter sentence={initialSentence} onComplete={handleTypewriterComplete} />}
+        {showPage && (
+          <>
+            {/* Render the rest of your components here */}
+            < div className="overflow-hidden  ">
+  <Navbar />
   <div className="flex flex-row items-center gap-6 mt-6  justify-center">
   <Routes>
     <Route path='/' element={<Homepage />} />
     <Route path="/members" element={<div className=" bg-gray-700 flex justify-center items-center w-[50vw] gap-3 rounded-xl" >
-   <div className=" bg-gray-300 flex justify-center items-center w-[50vw] gap-3 rounded-xl" >
-
- 
-  
-  
-  
-          <Route path='/contact' element={<Contactpage />} />
+   <Members Member={Member} />
+   </div>} />
+   <Route path="/Membershipform" element={<Membershipform  Addmember={Addmember}/>}/>
           <Route path='/events' element={<Events />} />
          <Route path='/about' element={<About />} />
   </Routes>
    
    </div>
-
   </div>
-
-          </div>
-        </>
-      )}</div>
-  
-
-  
-)
-}
+          </>
+        )}
+      </div>
+      )}
 export default App;
