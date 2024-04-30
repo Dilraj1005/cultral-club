@@ -20,32 +20,32 @@ const Cards = () => {
   return (
 
     <>
-   <div className=' relative flex items-center my-5   w-[90vw]  max-w-full '>
+   <div className=' relative flex items-center my-5     max-w-full '>
    <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100 z-2 ' onClick={slideLeft} size={40} />
-    <div id='slider' className=' rounded-xl flex  flex-row gap-3 w-full h-full overflow-x-auto scroll whitespace-nowrap scroll-smooth scrollbar-hide'>
+    <div id='slider' className=' p-3 rounded-xl flex  flex-row gap-3 w-full h-full overflow-x-auto scroll whitespace-nowrap scroll-smooth scrollbar-hide'>
     
-    <div className= ' rounded-xl shadow-2xl  m-2 flex flex-col flex-grow-0 flex-shrink-0 flex-auto p-3  h-[400px] w-[280px] cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white     '>
+    <div className= 'border-2 border-slate-500 rounded-xl shadow-2xl  m-2 flex flex-col flex-grow-0 flex-shrink-0 flex-auto p-3  h-[400px] w-[280px] cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white     '>
         <img className='h-[55%]  rounded-full  mx-4 ' src={pp1}  />
         <h3> Mrs. Lovekesh</h3>
         <p className=' text-wrap'>kjdsf shdkfsdkf jhkfjhskj shfkjsd hkhfksjf kKJDSKAJsakljaslkjljLJLJ</p>
 
        
     </div>
-    <div className= 'rounded-xl shadow-2xl m-2 flex flex-col flex-grow-0 flex-shrink-0 flex-auto p-3 h-[400px] w-[280px] cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white    ' >
+    <div className= 'border-2 border-slate-500 rounded-xl shadow-2xl m-2 flex flex-col flex-grow-0 flex-shrink-0 flex-auto p-3 h-[400px] w-[280px] cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white    ' >
     <img className='h-[55%]  rounded-full  mx-4 ' src={pp2}  />
        
          <h3> Mrs. Beant Kaur</h3>
         <p className=' text-wrap'>kjdsf shdkfsdkf jhkfjhskj shfkjsd hkhfksjf kKJDSKAJsakljaslkjljLJLJ</p>
        
     </div>
-    <div className='rounded-xl shadow-2xl m-2 flex flex-grow-0 flex-shrink-0 flex-auto p-3 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  h-[400px] w-[280px]'>
+    <div className='border-2 border-slate-500 rounded-xl shadow-2xl m-2 flex flex-grow-0 flex-shrink-0 flex-auto p-3 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  h-[400px] w-[280px]'>
     <img className='h-[55%]  rounded-full  mx-4 ' src={profile_pic}  />
        <div>
          {/* <h3> <br />Mr. Xavier</h3>
         <p>kjdsf shdkfsdkf jhkfjhskj shfkjsd hkhfksjf</p> */}
        </div>
     </div>
-    <div  className='rounded-xl shadow-2xl m-2 flex flex-grow-0 flex-shrink-0 flex-auto p-3 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  h-[400px] w-[280px]  '>
+    <div  className='border-2 border-slate-500 rounded-xl shadow-2xl m-2 flex flex-grow-0 flex-shrink-0 flex-auto p-3 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white  h-[400px] w-[280px]  '>
     <img className='h-[55%]  rounded-full float-left mx-4 ' src={profile_pic}  />
        <div>
          {/* <h3> <br />Mr. Xavier</h3>
