@@ -2,12 +2,9 @@ import Membershipform from "./Components/Membershipform";
 import "./App.css"
 import { useEffect, useState } from "react";
 import {Routes,Route} from "react-router-dom"
-
-import university_logo from "./images/university_logo.jpg"
 import Navbar from './Components/Navbar'
 import Members from "./Components/Members";
 import Homepage from './pages/Homepage'
-
 import Events from './pages/Events'
 import About from './pages/About'
 import 'bootstrap/dist/css/bootstrap.min.css';
