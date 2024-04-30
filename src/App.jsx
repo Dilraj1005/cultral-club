@@ -13,11 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App(){
-
-
-
-
-  const[Member,setMember]=useState([])
+const[Member,setMember]=useState([])
   const userdata=async()=>{
     await fetch("https://cultral-group-default-rtdb.firebaseio.com/Users.json")
     .then((res)=>res.json())
@@ -51,7 +47,7 @@ useEffect(()=>{
 
   
         {/* Render the rest of your components here */}
-        < div className="overflow-hidde  ">
+        < div className="overflow-hidden  ">
 <Navbar />
 <div >
 <Routes>

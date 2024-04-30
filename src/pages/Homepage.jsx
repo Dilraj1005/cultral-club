@@ -1,6 +1,4 @@
 import React from 'react'
-
-import Cards from '../Components/Cards'
 import Marquee from '../Components/Marquee'
 import Slideshow from '../Components/Card3'
 import university_logo from "../images/university_logo.jpg"
@@ -19,12 +17,11 @@ const Homepage = () => {
     <Typewriter text="WELCOME TO THE CULTURAL CLUB!" />
     </div>
     </div>
-    <div className='float-left m-0 p-0'>
+    <div className=' m-0 p-0'>
       
      <Marquee />
      <Slideshow />
-      
-    <Cards />
+      <Cards />
 
     </div>
     </>

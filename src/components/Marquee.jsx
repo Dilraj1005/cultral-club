@@ -13,9 +13,9 @@ const Marquee = () => {
   };
 
   return (
-    <div className='w-[600px] h-[400px]  m-4 p-4  rounded-lg shadow-lg border-2 border-slate-500 float-left'>
+    <div className='w-[600px] h-[400px]  m-4 p-4  rounded-lg shadow-lg border-2 border-white bg-purple-600 float-left'>
 
-<h3 className='text-lg'>Important Notice</h3>
+<h3 className='text-[25px] font-bold text-white'>Important Notice</h3>
     <div 
       className={`marquee ${isPaused ? 'paused' : ''}`}
       onMouseEnter={handleMouseEnter}
@@ -23,7 +23,7 @@ const Marquee = () => {
     >
       {/* Your marquee text goes here */}
       
-      <p className='text-wrap whitespace-normal'><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet leo vel metus consequat tincidunt. 
+      <p className='text-wrap whitespace-normal text-white'><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet leo vel metus consequat tincidunt. 
         {<br/>} {<br/>}
 
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, explicabo exercitationem iste magnam in necessitatibus neque maiores, a architecto debitis earum beatae expedita molestiae doloremque, sed numquam consectetur harum dolorum.

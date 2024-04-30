@@ -36,17 +36,18 @@ function Slideshow() {
     <>
     
     
-    <div className="slideshow w-[300px] mt-3 ">
+    <div className="slideshow w-[300px]  ">
+      <h3 className="text-white font-bold text-[25px] ml-[2vw]">UPCOMING EVENTS</h3>
       <div
         className="slideshowSlider "
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {colors.map((backgroundColor, index) => (
           <div  key={index}
-          className="slide  p-2    ">
+          className="slide  p-2  ">
             
             <img 
-           className="rounded-lg"
+           className="rounded-lg  border  border-slate-500 h-[400px] "
             src={backgroundColor}  alt="img" />
           </div>
           
