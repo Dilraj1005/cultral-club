@@ -1,3 +1,4 @@
+
 .marquee {
     white-space: nowrap;
     overflow: hidden;
@@ -60,4 +61,23 @@
   
   .slideshowDot.active {
     background-color: #6a0dad;
+
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+#demo{
+    z-index: 0;
+}
+#first{
+    background-image: url("./images/university_logo.jpg");
+    background-size: cover;background-repeat: no-repeat;
+}
+.glow-purple {
+    color: white;
+    text-shadow: 10px 10px 30px rgba(72, 146, 215, 0.8);
+    mix-blend-mode: screen;
+
   }
