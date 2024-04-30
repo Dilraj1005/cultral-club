@@ -1,7 +1,7 @@
 import React from 'react'
 import Marquee from '../Components/Marquee'
 import Slideshow from '../Components/Card3'
-import university_logo from "../images/university_logo.jpg"
+import university_logo from "../images/pup.jpg"
 import Cards from '../Components/Cards'
 import Typewriter from '../Components/Typewriter';
 

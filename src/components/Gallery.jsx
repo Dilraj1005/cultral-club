@@ -18,12 +18,12 @@ import "slick-carousel/slick/slick-theme.css";
     return(
        
         
-    <div className="w-3/4, m-auto">
+    <div className="w-3/4, m-auto ">
         <div className="mt-20 mb-20 ms-20 me-20">
         <Slider {...settings}>
             {data.map((d)=>(
                 
-                <div className="bg-white h-[450px] rounded-xl text-black">
+                <div className="bg-white h-[450px] rounded-xl text-black ">
                 <div  className=" h-56 rounded-t-xl bg-indigo-500 flex justify-center items-center">
                 <img src={d.images} alt="hi" className="h-44 w-44 rounded-full"/>
 
@@ -77,27 +77,6 @@ const data = [
                         class:`btech (ece)`,
                         images:`/src/images/img1.jpg`,
                         },
-            // {
-            //     name:`priyanka `,
-            //     class:`btech (ece)`,
-            //     images:`/src/images/img1.jpeg`,
-            //     },
-            //     {
-            //         name:`priyanka `,
-            //         class:`btech (ece)`,
-            //         images:`/src/images/img1.jpeg`,
-            //         },
-            //         {
-            //             name:`priyanka `,
-            //             class:`btech (ece)`,
-            //             images:`/src/images/img1.jpeg`,
-            //             },
-            //             {
-            //                 name:`priyanka `,
-            //                 class:`btech (ece)`,
-            //                 images:`/src/images/img1.jpeg`,
-            //                 },
-    
-
+            
 
 ];

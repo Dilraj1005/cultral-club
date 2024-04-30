@@ -10,7 +10,7 @@ import img25 from '../images/img25.jpg';
 function Page() {
   return (
     <>
-    <h1 className='text-7xl hover:text-9xl text-center p-8'>UPCOMING EVENTS!!</h1>
+    <h1 className='text-7xl  text-center p-8 text-white'>EVENTS</h1>
     <Carousel >
       <Carousel.Item>
         <img src={img5} className='h-[600px] w-[80%] ml-[150px]' />

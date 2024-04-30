@@ -3,7 +3,7 @@ import React from 'react'
 import {MdChevronLeft,MdChevronRight} from 'react-icons/md'
 import pp1 from '../images/pp1.jpg'
 import pp2 from '../images/pp2.jpg'
-import profile_pic from '../images/profile-pic.jpg'
+
 
 
 
@@ -39,21 +39,21 @@ const Cards = () => {
        
     </div>
     <div className='border-2 border-slate-500 rounded-xl shadow-2xl m-2 flex flex-grow-0 flex-shrink-0 flex-auto p-3 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-purple-600 text-white  h-[400px] w-[280px]'>
-    <img className='h-[55%]  rounded-full  mx-4 ' src={profile_pic}  />
+    <img className='h-[55%]  rounded-full  mx-4 ' src={pp1}  />
        <div>
          {/* <h3> <br />Mr. Xavier</h3>
         <p>kjdsf shdkfsdkf jhkfjhskj shfkjsd hkhfksjf</p> */}
        </div>
     </div>
     <div  className='border-2 border-slate-500 rounded-xl shadow-2xl m-2 flex flex-grow-0 flex-shrink-0 flex-auto p-3 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-purple-600 text-white  h-[400px] w-[280px]  '>
-    <img className='h-[55%]  rounded-full float-left mx-4 ' src={profile_pic}  />
+    <img className='h-[55%]  rounded-full float-left mx-4 ' src={pp2}  />
        <div>
          {/* <h3> <br />Mr. Xavier</h3>
         <p>kjdsf shdkfsdkf jhkfjhskj shfkjsd hkhfksjf</p> */}
        </div>
     </div>
     <div  className='rounded-xl shadow-2xl m-2 flex flex-grow-0 flex-shrink-0 flex-auto p-3 cursor-pointer hover:scale-105 ease-in-out duration-300 bg-purple-600 text-white  h-[400px] w-[280px]  '>
-         <img className='h-[55%]  rounded-full float-left mx-4 ' src={profile_pic}  />
+         <img className='h-[55%]  rounded-full float-left mx-4 ' src={pp1}  />
        <div>
        
        </div>

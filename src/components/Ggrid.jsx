@@ -8,8 +8,8 @@ import img_38 from '../images/img38.jpg';
 import img13 from '../images/img13.jpg';
 import img14 from '../images/img14.jpg';
 import img_15 from '../images/img15.jpg';
-import Carousel from './Carousel1';
-import UseRefPlayer from './UseRefPlayer';
+
+
 
 
 
@@ -21,7 +21,7 @@ import UseRefPlayer from './UseRefPlayer';
 function Ggrid(){
     return(
         <>
-        <h1 className='text-7xl font-semibold text-center mb-20 hover:text-9xl'>GALLERY</h1>
+        <h1 className='text-7xl font-semibold text-center mb-20  text-white'>GALLERY</h1>
        <div className='flex shadow-lg'>
      {/* <h1 className='text-7xl font-semibold'>GALLERY</h1> */}
        

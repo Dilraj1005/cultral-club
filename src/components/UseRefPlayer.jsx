@@ -31,12 +31,9 @@ const UseRefPlayer = () => {
 
     return(
     <>
- <h1 className="text-7xl hover:text-9xl text-center">MEMORIES</h1>
+ <h1 className="text-7xl  text-center text-white">MEMORIES</h1>
 
-    <div className="grid-btn ">
-        <CgPlayButtonR className="h-[50px] w-[50px]" onClick={handlePlay} /> 
-        <BsPauseBtnFill  className="h-[50px] w-[50px]"onClick={handlePause}/>
-    </div>
+    
     <div className="vdo flex ">
        
     <div className="a h-6 w-[50%] bg-indigo-400" >
@@ -49,11 +46,7 @@ const UseRefPlayer = () => {
         <source src="/Videos/videoBasant.mp4"/>
     </video>
     </div>
-    {/* <div className="c m-9" >
-    <video height="200" width="300px" ref={videoRef} onMouseEnter={handlePlay} onMouseLeave={handlePause}>
-        <source src="/Videos/videoBasant.mp4"/>
-    </video>
-    </div> */}
+   
     </div>
     </>
     );
