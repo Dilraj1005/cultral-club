@@ -1,4 +1,8 @@
 import React from 'react'
+
+import Cards from '../Components/Cards'
+import Marquee from '../Components/Marquee'
+import Slideshow from '../Components/Card3'
 import university_logo from "../images/university_logo.jpg"
 import Cards from '../Components/Cards'
 import Typewriter from '../Components/Typewriter';
@@ -17,7 +21,11 @@ const Homepage = () => {
     </div>
     <div className='float-left m-0 p-0'>
       
+     <Marquee />
+     <Slideshow />
+      
     <Cards />
+
     </div>
     </>
   )

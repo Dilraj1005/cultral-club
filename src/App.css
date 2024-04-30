@@ -1,4 +1,68 @@
 
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    height: 340px; /* Adjust the height as needed */
+  }
+  
+  .marquee span {
+    display: block;
+    animation: marquee 5s linear infinite;
+  }
+  
+  .marquee.paused span {
+    animation-play-state: paused;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  .slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 500px;
+  }
+  
+  .slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+  }
+  
+  .slide {
+    display: inline-block;
+  
+    height: 400px;
+    width: 100%;
+    border-radius: 40px;
+  }
+  
+  /* Buttons */
+  
+  .slideshowDots {
+    text-align: center;
+  }
+  
+  .slideshowDot {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  
+    cursor: pointer;
+    margin: 15px 7px 0px;
+  
+    background-color: #c4c4c4;
+  }
+  
+  .slideshowDot.active {
+    background-color: #6a0dad;
+
+
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;
@@ -15,4 +79,5 @@ box-sizing: border-box;
     color: white;
     text-shadow: 10px 10px 30px rgba(72, 146, 215, 0.8);
     mix-blend-mode: screen;
+
   }
