@@ -16,7 +16,7 @@ const Typewriter = ({ text }) => {
     }
   }, [text, currentIndex]);
 
-  return <h1 className='font-bold text-[100px] text-white glow-purple'>{displayText}</h1>;
+  return <h1 className='font-bold text-[80px] text-white glow-purple'>{displayText}</h1>;
 };
 
 export default Typewriter;

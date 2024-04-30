@@ -36,7 +36,7 @@ function Slideshow() {
     <>
     
     
-    <div className="slideshow w-[300px]  ">
+    <div className="slideshow w-[300px]  mt-4 ">
       <h3 className="text-white font-bold text-[25px] ml-[2vw]">UPCOMING EVENTS</h3>
       <div
         className="slideshowSlider "

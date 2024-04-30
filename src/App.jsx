@@ -61,7 +61,9 @@ useEffect(()=>{
 </Routes>
 
 </div>
+<footer className="bg-purple-600 text-white text-center mt-3"><p> Cultural Club | &#169; All rights reserved 2024</p></footer>
 </div>
+
       </>
 
       )}

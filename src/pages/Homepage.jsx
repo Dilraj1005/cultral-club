@@ -13,7 +13,7 @@ const Homepage = () => {
   
     <div className='flex '>
       <img className='m-[20px] h-[70vh] rounded-lg' src={university_logo} alt="" />
-    <div className='mt-[20px] flex justify-center items-center w-[50vw] h-[70vh]'>
+    <div className='mt-[20px] flex justify-center items-center w-[50vw] h-[70vh] '>
     <Typewriter text="WELCOME TO THE CULTURAL CLUB!" />
     </div>
     </div>

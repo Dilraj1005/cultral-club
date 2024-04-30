@@ -21,11 +21,11 @@ import img_15 from '../images/img15.jpg';
 function Ggrid(){
     return(
         <>
-        <h1 className='text-7xl font-semibold text-center mb-20  text-white'>GALLERY</h1>
+        <h1 className='text-5xl font-semibold text-center mb-20  text-white'>GALLERY</h1>
        <div className='flex shadow-lg'>
      {/* <h1 className='text-7xl font-semibold'>GALLERY</h1> */}
        
-        < div className='identity w-full max-w-7xl columns-3 gap-3 pb-2 mb-10 mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 '>
+        < div className='identity w-full max-w-7xl columns-3 gap-3 pb-2 mb-10 mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-5 '>
         <img src={img_20} className=' scale-80 hover:scale-150'  alt='image2'/>
         <img src={img_18}  className='scale-80 hover:scale-150'alt='image18' />
         <img src={img_17} className='scale-80 hover:scale-150'alt='image17'/>

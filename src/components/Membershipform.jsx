@@ -73,7 +73,7 @@ const Membershipform = ({Addmember,Member}) => {
         const res= await fetch('https://cultral-group-default-rtdb.firebaseio.com/Users.json',options)
         if (res){console.log(res)}
         else{console.log(error)}
-        document.getElementById("formdiv").innerHTML= "<h1>YOUR FORM IS SUBMITTED!</h1>"
+        document.getElementById("formdiv").innerHTML= "<h1 classname='text-white'>YOUR FORM IS SUBMITTED!</h1>"
         setTimeout(() => {
           navigate("/members")
         },5000 );

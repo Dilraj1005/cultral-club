@@ -10,8 +10,8 @@ import img25 from '../images/img25.jpg';
 function Page() {
   return (
     <>
-    <h1 className='text-7xl  text-center p-8 text-white'>EVENTS</h1>
-    <Carousel >
+    <h1 className='text-5xl  text-center p-8 text-white'>EVENTS</h1>
+    <Carousel className='h-[100vh]'>
       <Carousel.Item>
         <img src={img5} className='h-[600px] w-[80%] ml-[150px]' />
       
