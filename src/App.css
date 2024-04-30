@@ -1,12 +1,63 @@
-
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;}
-
-#demo{
-    z-index: 0;
-}
-#first{
-    background-image: url("./images/university_logo.jpg");
-    background-size: cover;background-repeat: no-repeat;
-}
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    height: 340px; /* Adjust the height as needed */
+  }
+  
+  .marquee span {
+    display: block;
+    animation: marquee 5s linear infinite;
+  }
+  
+  .marquee.paused span {
+    animation-play-state: paused;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  .slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 500px;
+  }
+  
+  .slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+  }
+  
+  .slide {
+    display: inline-block;
+  
+    height: 400px;
+    width: 100%;
+    border-radius: 40px;
+  }
+  
+  /* Buttons */
+  
+  .slideshowDots {
+    text-align: center;
+  }
+  
+  .slideshowDot {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  
+    cursor: pointer;
+    margin: 15px 7px 0px;
+  
+    background-color: #c4c4c4;
+  }
+  
+  .slideshowDot.active {
+    background-color: #6a0dad;
+  }
