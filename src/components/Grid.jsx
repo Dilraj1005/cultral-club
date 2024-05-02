@@ -2,25 +2,26 @@
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import "../Components/Grid.css"
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-import slide_image_18 from "../images/img18.jpg";
-import slide_image_17 from "../images/img17.jpg";
-import slide_image_8 from "../images/img8.jpg";
-import slide_image_13 from "../images/img13.jpg";
-import slide_image_12 from "../images/img12.jpg";
-import slide_image_31 from "../images/img31.jpg";
-import slide_image_36 from "../images/img36.jpg";
-import slide_image_32 from "../images/img32.jpg";
-import slide_image_24 from "../images/img24.jpg";
-import slide_image_37 from "../images/img37.jpg";
-import slide_image_33 from "../images/img33.jpg";
-import slide_image_38 from "../images/img38.jpg";
+// import slide_image_18 from "../images/img18.jpg";
+// import slide_image_17 from "../images/img17.jpg";
+// import slide_image_8 from "../images/img8.jpg";
+// import slide_image_13 from "../images/img13.jpg";
+// import slide_image_12 from "../images/img12.jpg";
+// import slide_image_31 from "../images/img31.jpg";
+// import slide_image_36 from "../images/img36.jpg";
+// import slide_image_32 from "../images/img32.jpg";
+// import slide_image_24 from "../images/img24.jpg";
+// import slide_image_37 from "../images/img37.jpg";
+// import slide_image_33 from "../images/img33.jpg";
+// import slide_image_38 from "../images/img38.jpg";
+import slide_image from "../assets/images/img1.jpg";
 
 
 function Grid() {
@@ -49,18 +50,18 @@ function Grid() {
           className="swiper_container"
         >
           <SwiperSlide>
-            <img src={slide_image_18} alt="slide_image" />
+            <img src={slide_image} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_17} alt="slide_image" />
+            <img src={slide_image} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={slide_image_8} alt="slide_image" />
+            <img src={slide_image} alt="slide_image" />
           </SwiperSlide>
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <img src={slide_image_13} alt="slide_image" />
-          </SwiperSlide>
-          <SwiperSlide>
+          </SwiperSlide> */}
+          {/* <SwiperSlide>
             <img src={slide_image_12} alt="slide_image" />
           </SwiperSlide>
           <SwiperSlide>
@@ -85,7 +86,7 @@ function Grid() {
             <img src={slide_image_38} alt="slide_image" />
           </SwiperSlide>
 
-  
+   */}
           <div className="slider-controler">
             <div className="swiper-button-prev slider-arrow">
               <ion-icon name="arrow-back-outline"></ion-icon>

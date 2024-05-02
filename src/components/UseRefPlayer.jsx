@@ -1,22 +1,19 @@
 import React,{useRef} from "react";
-
-
-
 const UseRefPlayer = () => {
     const videoRef = useRef();
     const videoReff =useRef();
-   const videoRef2=useRef()
+   const videoRefff=useRef()
 
     const handlePlay = () =>{
         videoRef.current.play();
 
     };
     const handlePlay2 = () =>{
-        videoRef.current.play();
+        videoReff.current.play();
 
     };
     const handlePlay1= () =>{
-        videoReff.current.play();
+        videoRefff.current.play();
         
 
     };
@@ -27,12 +24,12 @@ const UseRefPlayer = () => {
         
     };
     const handlePause2 =()=>{
-        videoRef.current.pause();
+        videoReff.current.pause();
     
         
     };
     const handlePause1 =()=>{
-        videoReff.current.pause();
+        videoRefff.current.pause();
     };
     
 
@@ -52,12 +49,12 @@ const UseRefPlayer = () => {
     </div>
     <div className="p-3 w-[30%]  flex justify-center h-[550px]" >
     <video height="200" width="300px"  className=" "  ref={videoReff} onMouseEnter={handlePlay2} onMouseLeave={handlePause2}>
-        <source src="/Videos/videoBasant.mp4"/>
+        <source src="/Videos/event1.mp4"/>
     </video>
     </div>
     <div className="p-3 w-[30%]  flex justify-center h-[550px]" >
-    <video height="200" width="300px" className=" " ref={videoReff} onMouseEnter={handlePlay1} onMouseLeave={handlePause1}>
-        <source src="/Videos/videoBasant.mp4"/>
+    <video height="200" width="300px" className=" " ref={videoRefff} onMouseEnter={handlePlay1} onMouseLeave={handlePause1}>
+        <source src="/Videos/Freshers_2k23.mp4"/>
     </video>
     </div>
    

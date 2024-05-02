@@ -4,12 +4,16 @@ import Ggrid from "../Components/Ggrid"
 import UseRefPlayer from '../Components/UseRefPlayer'
 
 
+
+
 const Events = () => {
   return (
-    <div>
+    <div >
       <Page />
+      
       <Ggrid />
       <UseRefPlayer />
+
     </div>
   )
 }

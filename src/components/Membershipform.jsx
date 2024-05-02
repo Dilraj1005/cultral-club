@@ -81,7 +81,7 @@ const Membershipform = ({Addmember,Member}) => {
        
      }}
       className='flex flex-col gap-7 border border-black rounded-lg p-12 bg-purple-600 mt-4'>
-      <h1 className='ml-[1vw] text-[5vh] font-bold '>MEMBERSHIP FORM</h1>
+      <h1 className='ml-[1vw] text-[5vh] font-bold text-white '>MEMBERSHIP FORM</h1>
       <input 
       id="username"
       name="username"
@@ -121,7 +121,7 @@ const Membershipform = ({Addmember,Member}) => {
         <option value="Ece">ECE</option>
         <option value="Ecm">ECM</option>
       </select>
-      <input type="submit" className='border h-[40px] w-[100px] ml-[9vw] border-black rounded-md cursor-pointer bg-black text-white hover:scale-90' />
+      <input type="submit" className='border h-[40px] w-[140px] ml-[7vw] border-black rounded-md cursor-pointer bg-black text-white hover:scale-90' />
       
       </form>
     </div>  )
